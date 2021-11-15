@@ -1,0 +1,81 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/vendors/stylesheet.css);
+
+.page{
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1440px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+.banner{
+    background: url(./images/banner.png);
+    width: 100%;
+    height: 830px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 40px;
+}
+
+.header{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header__logo{
+    width: 316px;
+    height: 104px;
+    margin-top: 8px;
+}
+
+.header__menu{
+    margin-top: 34px;
+}
+
+.header__link{
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+    margin-right: 32px;
+}
+
+.header__link_active{
+    text-shadow: 1px 1px #000000, 1px -1px #000000, -1px 1px #000000, -1px -1px #000000;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 8px;
+}
+
+.header__contact{
+    width: 130px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: transparent;
+    margin: 0 32px;
+}
+
+.header__lang{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    text-decoration: none;
+}
