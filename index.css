@@ -18,11 +18,11 @@
     height: 830px;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 0 40px;
+    padding: 0 16%;
 }
 
 .header{
-    max-width: 1024px;
+    /* max-width: 1024px; */
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -78,4 +78,48 @@
     color: #FFFFFF;
     opacity: 0.7;
     text-decoration: none;
+}
+
+.banner__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 88px 0 24px 0;
+    width: 823px;
+}
+
+.banner__subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    color: #D5EEFB;
+    margin: 0;
+}
+
+.banner__icons{
+    margin: 40px 0 119px 0;
+}
+
+.banner__icon{
+    width: 88px;
+    margin-right: 24px;
+}
+
+.banner__buy{
+    width: 150px;
+    height: 50px;
+    background: #D29029;
+    border: 2px solid #D29029;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
 }
