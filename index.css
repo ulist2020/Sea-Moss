@@ -221,14 +221,19 @@
 
 .product{
     margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product__cards{
     padding: 0;
-    margin: 0 auto 0 auto;
+    margin: 0;
     list-style: none;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    position: relative;
+    max-width: 1440px;    
 }
 
 .product__card{
@@ -310,7 +315,32 @@
     margin-right: 0px;
 }
 
+.product__mob{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    display: none;
+}
+
+.product__mob-left{
+    background-image: url("./images/arrow-left.png");
+    left: 3%;
+    top: 50%;
+}
+
+.product__mob-right{
+    background-image: url("./images/arrow-right.png");
+    right: 3%;
+    top: 50%;
+}
+
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
+    .banner {
+        height: 700px;
+    }
     .banner__title{
         font-size: 52px;
         line-height: 60px;
@@ -338,6 +368,10 @@
 
     .benefit__banner{
         height: 446px;
+    }
+
+    .product__cards {
+        max-width: 1280px;
     }
 }
 
@@ -383,6 +417,24 @@
     }
     .benefit__banner{
         height: 446px;
+    }
+
+    .product{
+        margin-top: 75px;
+    }
+
+    .benefit__subtitle {
+        margin: 24px 5% 60px 5%;
+    }
+
+    .product__cards {
+        max-width: 1024px;
+    }
+    .product__car-three{
+        display: none;
+    }
+    .product__mob{
+        display: block;
     }
     
 }
@@ -483,6 +535,27 @@
     }
     .benefit__banner {
         height: 326px;
+    }
+
+    .product__car-two{
+        display: none;
+    }
+    .product__car-three{
+        display: none;
+    }
+    .product{
+        margin-top: 75px;
+    }
+
+    .benefit__subtitle {
+        margin: 24px 5% 60px 5%;
+    }
+
+    .product__cards {
+        max-width: 768px;
+    }
+    .product__mob{
+        display: block;
     }
 }
 
@@ -641,6 +714,7 @@
     .benefit__title {
         font-size: 24px;
         line-height: 133%;
+        margin: 0 5% 0 5%;
     }
     .benefit__subtitle {
         font-size: 12px;
@@ -685,6 +759,75 @@
         background-position-x: 100%;
         width: 100%;
         height: 187px;
+    }
+
+    .product__car-one{
+        background: url("./images/image-bios-mob.png");
+    }
+
+    .product__car-two{
+        background: url("./images/image-milk-mob.png");
+        display: none;
+    }
+    .product__car-three{
+        background: url("./images/image-peanut-mob.png");
+        display: none;
+    }
+    .product{
+        margin-top: 60px;
+    }
+
+    .product__cards {
+        max-width: 320px;
+    }
+    .product__mob{
+        display: block;
+    }
+
+    .product__card {
+        width: 320px;
+        height: 517px;
+    }
+
+    .product__text{
+        margin-bottom: 40px;
+    }
+
+    .product__title{
+        margin: 0 auto 8px auto;
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 213px;
+    }
+
+    .prouct__line{
+        width: 213px;
+        margin: auto;
+    }
+
+    .product__subtitle{
+        margin: 10px auto 0 auto;
+        font-size: 10px;
+        line-height: 13px;
+        max-width: 213px;
+    }
+
+    .product__subtitle-volume{
+        margin: 5px auto 0 auto;
+    }
+    
+    .product__but{
+        margin-top: 13px;
+        font-size: 12px;
+        line-height: 16px;
+        border: 1.5px solid #FFFFFF;
+        border-radius: 20px;
+        width: 130px;
+        height: 40px;
+        margin-right: 12px;
+    }
+    .product__but-right{
+        margin-right: 0px;
     }
     
 }
